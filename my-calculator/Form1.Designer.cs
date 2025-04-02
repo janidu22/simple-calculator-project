@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btn0 = new Button();
             btnFloat = new Button();
             btnAssignment = new Button();
@@ -211,6 +212,7 @@
             // 
             // txtDisplay
             // 
+            txtDisplay.Font = new Font("Segoe UI", 20F);
             txtDisplay.Location = new Point(25, 41);
             txtDisplay.Multiline = true;
             txtDisplay.Name = "txtDisplay";
@@ -263,6 +265,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(342, 553);
             Controls.Add(btnDevide);
             Controls.Add(btnPercentage);
@@ -284,6 +287,7 @@
             Controls.Add(btnAssignment);
             Controls.Add(btnFloat);
             Controls.Add(btn0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Simple Calculator";
             Load += Form1_Load;
